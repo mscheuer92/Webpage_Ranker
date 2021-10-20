@@ -10,7 +10,7 @@ import codecs
 extractor = extractors.ArticleExtractor()
 
 for a in os.listdir("files/raw_html_files"):
-    # lines 70-74 borrowed from https://stackoverflow.com/questions/3269293/how-to-write-a-check-in-python-to-see-if-file-is-valid-utf-8
+    # lines 14-18 borrowed from https://stackoverflow.com/questions/3269293/how-to-write-a-check-in-python-to-see-if-file-is-valid-utf-8
     try:
         f = codecs.open("files/raw_html_files/" + a, encoding='utf-8', errors='ignore')
         for line in f:
