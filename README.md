@@ -1,11 +1,5 @@
-# Homework 3 - Ranking Webpages
-### Michelle Scheuer
-### CS 432, Fall 2021
-### Due: 10/24/2021
 
-## Assignment
-
-### Q1. Data Collection
+### Data Collection
 
 #### Saving the HTML Files
 
@@ -105,11 +99,7 @@ Let's take a further look at the code:
 need to do  it later.
 
 
-*Q: How many of your 1000 URIs produced useful text?  If that number was less than 1000, did that surprise you?*
-
-Out of 1000 files, 396 files produced useful text. I'm not super surprised, because there were a lot of files that had errors.
-
-### Q2. Rank with TF-IDF
+### Rank with TF-IDF
 
 #### Collecting TF data:
 One of the query terms that I originally used was "vaccine". After executing ` grep -c 'vaccine' files/processed_html_files/*.html
@@ -227,7 +217,7 @@ This script:
 
 *The URI-R's have been cross-referenced with `url_with_hash.txt` for accuracy.*
 
-### Q3. Rank with PageRank
+### Rank with PageRank
 
 To rank the domains of the 10 URI's by theor PageRank, I used [DNS Checker](http://www.checkpagerank.net/)
 
@@ -248,11 +238,8 @@ Table 2.  10 hits for the term "vaccine", ranked by PageRank.
 
 *Q: Briefly compare and contrast the rankings produced in Q2 and Q3.*
 
-In question 2, URI #10 had the lowest TF-IDF score, but as far as PageRank goes, it received a 6/10 from the DNS Checker site. That puts it right up there with the 
-top result from question 2, which also had a PageRank of 6/10. I was actually surprised that http://www.msn.com/ had a PageRank of 6/10. I thought for sure it would have 
-been a 10/10.
-
-The first 6 results in the PageRank table reflect the results in the TF-IDF table. They are ranked high in both of these tables. The lowest PageRank result which sits at a 3/10, was 
+URI #10 had the lowest TF-IDF score, but as far as PageRank goes, it received a 6/10 from the DNS Checker site. That puts it right up there with the 
+top result from question 2, which also had a PageRank of 6/10. I was actually surprised that http://www.msn.com/ had a PageRank of 6/10. The first 6 results in the PageRank table reflect the results in the TF-IDF table. They are ranked high in both of these tables. The lowest PageRank result which sits at a 3/10, was 
 actually not the lowest TF-IDF. 
 
 
