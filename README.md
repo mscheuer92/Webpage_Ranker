@@ -9,7 +9,6 @@ To save the HTML files, I wrote `data-collection.py`. Let's take a look at that 
 #data_collection.py
 
 # Michelle Scheuer
-# CS 432
 # 10/13/2021
 
 import os
@@ -49,7 +48,6 @@ In order to remove the HTML boilerplate, I wrote `boilerplate_remover.py`, as se
 #boilerplate_remover.py
 
 # Michelle Scheuer
-# CS 432
 # 10/13/2021
 
 import time
@@ -174,7 +172,6 @@ In order to save my brain from doing all of this math manually, I whipped up a q
 # rank_pages.py
 
 # Michelle Scheuer
-# CS 432
 # 10/19/2021
 
 import numpy
